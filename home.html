@@ -17,7 +17,7 @@
             <!-- available balance section start here -->
             <div class="stats shadow">
                 <div class="stat">
-                  <div class="stat-value">9400</div>
+                  <div id="available-balance" class="stat-value">9400</div>
                   <div class="stat-desc">Available Balance</div>
                 </div>
               </div>
@@ -27,33 +27,57 @@
                <!-- use action button start here -->
 
                <div>
-                <button class="btn btn-lg">Add Money</button>
-                <button class="btn btn-lg">Chas Out</button>
+                <button id="show-add-money" class="btn btn-lg">Add Money</button>
+                <button id="show-btn" class="btn btn-lg">Chas Out</button>
                 <div class="divider"></div>
                </div>
                <!-- user action button end -->
                 <!-- add money start here -->
 
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-money-btn" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Amount</span>
                         </label>
-                        <input type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                        <input id="addAmount" type="text" placeholder="Enter Amount" class="input input-bordered" required />
                       </div>
                       <div class="form-control">
                         <label class="label">
                           <span class="label-text">Pin</span>
                         </label>
-                        <input type="password" placeholder="Pin" class="input input-bordered" autocomplete="off" required />
+                        <input id="pin-num" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
                        
                       </div>
                       <div class="form-control mt-6">
-                        <button class="btn btn-primary">Add Money</button>
+                        <button id="add-money" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
+                  <!-- add money end here -->
+                   <!-- chas out section start here -->
+
+                   <div id="hidden-element" class=" hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="chas-out" type="text" placeholder="Enter Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="chas-outPin" type="password" placeholder="Pin Number" class="input input-bordered" autocomplete="off" required />
+                       
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="chas-out-btn" class="btn btn-primary">Chas Out</button>
+                      </div>
+                    </form>
+                  </div>
+
 
 
           </div>
@@ -61,5 +85,7 @@
       </div>
    </main>
     <script src="./js/home.js"></script>
+    <script src="./js/chas.js"></script>
+    <script src="./js/features.js"></script>
 </body>
 </html>
